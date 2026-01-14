@@ -79,7 +79,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-5 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
             {/* Contact Info */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -88,7 +88,7 @@ const Contact = () => {
               viewport={{ once: true }}
               className="lg:col-span-2 space-y-6"
             >
-              <div className="glass rounded-2xl p-8">
+              <div className="glass rounded-2xl p-6 sm:p-8">
                 <div className="flex items-center gap-3 mb-6">
                   <MessageCircle className="text-primary-500" size={28} />
                   <h3 className="text-xl font-semibold text-dark-900 dark:text-dark-50">
@@ -138,8 +138,8 @@ const Contact = () => {
               viewport={{ once: true }}
               className="lg:col-span-3"
             >
-              <form onSubmit={handleSubmit} className="glass rounded-2xl p-8">
-                <div className="grid sm:grid-cols-2 gap-6 mb-6">
+              <form onSubmit={handleSubmit} className="glass rounded-2xl p-6 sm:p-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
                   <div>
                     <label className="block text-sm font-medium text-dark-700 dark:text-dark-300 mb-2">
                       {t.contact.form.name}
@@ -149,7 +149,7 @@ const Contact = () => {
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark-800/50 border border-dark-200 dark:border-dark-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all text-dark-900 dark:text-dark-100"
+                      className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark-800/50 border border-dark-200 dark:border-dark-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all text-dark-900 dark:text-dark-100 text-base"
                       placeholder={t.contact.form.namePlaceholder}
                     />
                   </div>
@@ -162,7 +162,7 @@ const Contact = () => {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark-800/50 border border-dark-200 dark:border-dark-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all text-dark-900 dark:text-dark-100"
+                      className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark-800/50 border border-dark-200 dark:border-dark-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all text-dark-900 dark:text-dark-100 text-base"
                       placeholder={t.contact.form.emailPlaceholder}
                     />
                   </div>
@@ -173,10 +173,10 @@ const Contact = () => {
                   </label>
                   <textarea
                     required
-                    rows={6}
+                    rows={5}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark-800/50 border border-dark-200 dark:border-dark-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all resize-none text-dark-900 dark:text-dark-100"
+                    className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark-800/50 border border-dark-200 dark:border-dark-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all resize-none text-dark-900 dark:text-dark-100 text-base"
                     placeholder={t.contact.form.messagePlaceholder}
                   />
                 </div>
@@ -184,7 +184,7 @@ const Contact = () => {
                   type="submit"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full py-4 rounded-lg bg-gradient-primary text-white font-medium hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-lg shadow-primary-500/30"
+                  className="w-full py-3 sm:py-4 rounded-lg bg-gradient-primary text-white font-medium hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-lg shadow-primary-500/30"
                 >
                   {t.contact.form.send}
                   <Send size={18} />

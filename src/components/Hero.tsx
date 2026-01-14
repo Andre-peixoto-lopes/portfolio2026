@@ -27,7 +27,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-dark-900 dark:text-dark-50"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-dark-900 dark:text-dark-50"
           >
             {t.hero.greeting}{' '}
             <span className="text-gradient">André</span>
@@ -37,7 +37,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="text-xl md:text-2xl lg:text-3xl text-dark-500 dark:text-dark-400 mb-4 font-light"
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-dark-500 dark:text-dark-400 mb-4 font-light"
           >
             {t.hero.role}{' '}
             <span className="text-primary-500 font-medium">@AbInbev</span>
@@ -47,7 +47,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
-            className="text-dark-500 dark:text-dark-400 text-lg md:text-xl mb-8 max-w-2xl mx-auto"
+            className="text-dark-500 dark:text-dark-400 text-base sm:text-lg md:text-xl mb-8 max-w-2xl mx-auto px-4"
           >
             {t.hero.description}
           </motion.p>

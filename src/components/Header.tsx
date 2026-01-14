@@ -43,12 +43,12 @@ const Header = () => {
         isScrolled ? 'glass py-3' : 'py-5'
       }`}
     >
-      <nav className="container mx-auto px-4 md:px-6 flex items-center justify-between">
+      <nav className="container mx-auto px-4 md:px-6 flex items-center justify-between gap-2">
         <motion.a
           href="#home"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="text-2xl font-bold text-gradient"
+          className="text-lg sm:text-xl md:text-2xl font-bold text-gradient flex-shrink-0"
         >
           &lt;André /&gt;
         </motion.a>
@@ -73,7 +73,7 @@ const Header = () => {
         </ul>
 
         {/* Controls */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
           {/* Language Selector */}
           <div className="relative">
             <motion.button
@@ -82,7 +82,7 @@ const Header = () => {
               onClick={() => setShowLangMenu(!showLangMenu)}
               className="p-2 rounded-lg glass text-dark-600 dark:text-dark-300 hover:text-primary-500 transition-colors"
             >
-              <Languages size={20} />
+              <Languages size={18} className="sm:w-5 sm:h-5" />
             </motion.button>
             {showLangMenu && (
               <motion.div
@@ -118,7 +118,7 @@ const Header = () => {
             onClick={toggleTheme}
             className="p-2 rounded-lg glass text-dark-600 dark:text-dark-300 hover:text-primary-500 transition-colors"
           >
-            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+            {theme === 'dark' ? <Sun size={18} className="sm:w-5 sm:h-5" /> : <Moon size={18} className="sm:w-5 sm:h-5" />}
           </motion.button>
 
           {/* Contact Button (Desktop) */}
@@ -126,7 +126,7 @@ const Header = () => {
             href="#contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="hidden md:block px-4 py-2 rounded-lg bg-gradient-primary text-white font-medium text-sm hover:opacity-90 transition-opacity"
+            className="hidden lg:block px-4 py-2 rounded-lg bg-gradient-primary text-white font-medium text-sm hover:opacity-90 transition-opacity"
           >
             {t.nav.contact}
           </motion.a>
@@ -136,7 +136,7 @@ const Header = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden p-2 text-dark-600 dark:text-dark-300 hover:text-primary-500 transition-colors"
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </nav>
