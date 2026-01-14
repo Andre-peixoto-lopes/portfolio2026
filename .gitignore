@@ -1,0 +1,72 @@
+# Dependências
+node_modules/
+.pnp
+.pnp.js
+
+# Build/Produção
+dist/
+build/
+*.local
+
+# Arquivos de ambiente (SENSÍVEIS - nunca commitar!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor/IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema Operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Cache
+.cache/
+.parcel-cache/
+.eslintcache
+*.tsbuildinfo
+
+# Testes
+coverage/
+.nyc_output/
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.log
+
+# Credenciais e chaves (CRÍTICO!)
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets.json
+credentials.json
+serviceAccountKey.json
+
+# Tokens e configurações sensíveis
+.npmrc
+.yarnrc
+*.secret
