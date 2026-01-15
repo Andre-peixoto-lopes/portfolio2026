@@ -69,7 +69,6 @@ const Skills = () => {
     { name: 'IAs Generativas', category: 'tools', icon: FaRobot, color: '#10B981' },
     { name: 'Claude/Copilot', category: 'tools', icon: SiOpenai, color: '#412991' },
     { name: 'VS Code', category: 'tools', icon: VscVscode, color: '#007ACC' },
-    { name: 'Teams API', category: 'tools', icon: FaCloud, color: '#6264A7' },
   ]
 
   const filteredSkills = activeCategory === 'all' 

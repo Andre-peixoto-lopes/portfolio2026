@@ -200,15 +200,6 @@ const GitHubStats = () => {
                 className="w-full max-w-4xl rounded-lg"
               />
             </div>
-
-            {/* GitHub Stats Card */}
-            <div className="flex justify-center mt-6">
-              <img 
-                src={`https://github-readme-stats.vercel.app/api?username=${GITHUB_USERNAME}&show_icons=true&theme=dark&hide_border=true&bg_color=00000000&title_color=f59e0b&icon_color=22c55e&text_color=9ca3af&locale=pt-br`}
-                alt="GitHub Stats"
-                className="w-full max-w-xl rounded-lg"
-              />
-            </div>
           </motion.div>
         </motion.div>
       </div>
