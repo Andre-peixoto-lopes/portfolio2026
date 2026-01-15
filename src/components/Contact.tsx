@@ -28,25 +28,29 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'andrepeixoto...@hotmail.com',
+      value: 'andrepeixotocontato@hotmail.com',
+      valueMobile: 'andrepeixoto...@hotmail.com',
       href: 'mailto:andrepeixotocontato@hotmail.com',
     },
     {
       icon: MapPin,
       label: t.contact.location,
       value: 'Jundiaí, Brasil',
+      valueMobile: null,
       href: null,
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
       value: 'andré-peixoto-lopes',
+      valueMobile: null,
       href: 'https://www.linkedin.com/in/andr%C3%A9-peixoto-lopes',
     },
     {
       icon: Github,
       label: 'GitHub',
       value: 'Andre-peixoto-lopes',
+      valueMobile: null,
       href: 'https://github.com/Andre-peixoto-lopes',
     },
   ]
@@ -118,7 +122,15 @@ const Contact = () => {
                             rel="noopener noreferrer"
                             className="text-dark-700 dark:text-dark-200 hover:text-primary-500 transition-colors block truncate text-sm sm:text-base"
                           >
-                            {info.value}
+                            {/* Email abreviado em mobile, completo em desktop */}
+                            {info.valueMobile ? (
+                              <>
+                                <span className="sm:hidden">{info.valueMobile}</span>
+                                <span className="hidden sm:inline">{info.value}</span>
+                              </>
+                            ) : (
+                              info.value
+                            )}
                           </a>
                         ) : (
                           <p className="text-dark-700 dark:text-dark-200 truncate text-sm sm:text-base">{info.value}</p>
