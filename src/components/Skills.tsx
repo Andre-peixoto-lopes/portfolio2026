@@ -18,7 +18,7 @@ import {
   SiOpenai,
   SiPostgresql
 } from 'react-icons/si'
-import { FaRobot, FaCode, FaRocket, FaCloud } from 'react-icons/fa'
+import { FaRobot, FaCode, FaRocket} from 'react-icons/fa'
 import { HiOutlineRefresh } from 'react-icons/hi'
 import { BsGraphUp } from 'react-icons/bs'
 import { VscAzure, VscVscode } from 'react-icons/vsc'
