@@ -28,7 +28,7 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'andrepeixotocontato@hotmail.com',
+      value: 'andrepeixoto...@hotmail.com',
       href: 'mailto:andrepeixotocontato@hotmail.com',
     },
     {
@@ -40,13 +40,13 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: '/in/andré-peixoto-lopes',
+      value: 'andré-peixoto-lopes',
       href: 'https://www.linkedin.com/in/andr%C3%A9-peixoto-lopes',
     },
     {
       icon: Github,
       label: 'GitHub',
-      value: '@Andre-peixoto-lopes',
+      value: 'Andre-peixoto-lopes',
       href: 'https://github.com/Andre-peixoto-lopes',
     },
   ]
@@ -106,22 +106,22 @@ const Contact = () => {
                       viewport={{ once: true }}
                       className="flex items-center gap-4 group"
                     >
-                      <div className="w-12 h-12 rounded-lg glass flex items-center justify-center group-hover:bg-primary-500/20 transition-colors">
+                      <div className="w-12 h-12 flex-shrink-0 rounded-lg glass flex items-center justify-center group-hover:bg-primary-500/20 transition-colors">
                         <info.icon className="text-primary-500" size={20} />
                       </div>
-                      <div>
+                      <div className="min-w-0 flex-1">
                         <p className="text-sm text-dark-400">{info.label}</p>
                         {info.href ? (
                           <a
                             href={info.href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-dark-700 dark:text-dark-200 hover:text-primary-500 transition-colors"
+                            className="text-dark-700 dark:text-dark-200 hover:text-primary-500 transition-colors block truncate text-sm sm:text-base"
                           >
                             {info.value}
                           </a>
                         ) : (
-                          <p className="text-dark-700 dark:text-dark-200">{info.value}</p>
+                          <p className="text-dark-700 dark:text-dark-200 truncate text-sm sm:text-base">{info.value}</p>
                         )}
                       </div>
                     </motion.div>

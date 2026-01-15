@@ -13,9 +13,9 @@ function App() {
   return (
     <ThemeProvider>
       <LanguageProvider>
-        <div className="relative min-h-screen bg-white dark:bg-dark-950 transition-colors duration-300">
+        <div className="relative min-h-screen bg-white dark:bg-dark-950 transition-colors duration-300 overflow-x-hidden w-full">
           <Header />
-          <main>
+          <main className="overflow-x-hidden">
             <Hero />
             <About />
             <Experience />
