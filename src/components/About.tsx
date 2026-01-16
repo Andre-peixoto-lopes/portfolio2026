@@ -87,7 +87,7 @@ const About = () => {
                   className="w-full h-full object-cover rounded-xl"
                 />
                 <div className="absolute bottom-6 left-6 right-6 glass rounded-xl p-4 z-20">
-                  <div className="text-4xl font-bold text-gradient mb-1">3+</div>
+                  <div className="text-4xl font-bold text-gradient mb-1">2+</div>
                   <p className="text-dark-500 dark:text-dark-400 text-sm">{t.about.yearsExperience}</p>
                 </div>
                 <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-primary rounded-full blur-2xl opacity-50" />

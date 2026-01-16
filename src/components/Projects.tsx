@@ -12,6 +12,7 @@ interface WebProject {
   description: LocalizedText
   image: string
   url: string
+  github: string
   tags: string[]
 }
 
@@ -46,6 +47,7 @@ const Projects = () => {
       image: '💼',
       url: '#',
       tags: ['React', 'TypeScript', 'Tailwind', 'Framer Motion'],
+      github: '#',
     },
     {
       id: 'landing1',
@@ -62,6 +64,7 @@ const Projects = () => {
       image: '🏢',
       url: '#',
       tags: ['React', 'Next.js', 'Tailwind'],
+      github: '#',
     },
     {
       id: 'ecommerce',
@@ -78,6 +81,7 @@ const Projects = () => {
       image: '📊',
       url: '#',
       tags: ['React', 'TypeScript', 'Chart.js'],
+      github: '#',
     },
   ]
 
@@ -388,6 +392,17 @@ if __name__ == "__main__":
                     >
                       <ExternalLink size={16} />
                       {t.projects.viewSite}
+                    </motion.a>
+                    <motion.a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-primary text-white text-sm font-medium"
+                    >
+                      <ExternalLink size={16} />
+                      {t.projects.viewGithub}
                     </motion.a>
                   </div>
                 </motion.div>

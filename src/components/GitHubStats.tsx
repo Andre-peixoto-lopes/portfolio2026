@@ -68,7 +68,7 @@ const GitHubStats = () => {
   const translations = {
     pt: {
       title: 'Estatísticas GitHub',
-      subtitle: 'Minha atividade no GitHub',
+      subtitle: 'Minha atividade no GitHub em 2025',
       repos: 'Repositórios Públicos',
       followers: 'Seguidores',
       visitors: 'Visitantes do Portfólio',
@@ -77,7 +77,7 @@ const GitHubStats = () => {
     },
     en: {
       title: 'GitHub Stats',
-      subtitle: 'My GitHub Activity',
+      subtitle: 'My GitHub Activity in 2025',
       repos: 'Public Repositories',
       followers: 'Followers',
       visitors: 'Portfolio Visitors',
@@ -86,7 +86,7 @@ const GitHubStats = () => {
     },
     es: {
       title: 'Estadísticas GitHub',
-      subtitle: 'Mi actividad en GitHub',
+      subtitle: 'Mi actividad en GitHub en 2025',
       repos: 'Repositorios Públicos',
       followers: 'Seguidores',
       visitors: 'Visitantes del Portafolio',
@@ -140,30 +140,6 @@ const GitHubStats = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-dark-900 dark:text-dark-50">
               {t.subtitle}
             </h2>
-          </div>
-
-          {/* Stats Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            {stats.map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: 0.3 + index * 0.1, duration: 0.5 }}
-                whileHover={{ scale: 1.02, y: -5 }}
-                className="glass rounded-2xl p-6 text-center group"
-              >
-                <div className={`w-14 h-14 rounded-xl bg-gradient-to-r ${stat.color} flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform`}>
-                  <stat.icon className="text-white" size={28} />
-                </div>
-                <div className="text-4xl font-bold text-dark-900 dark:text-white mb-2">
-                  {stat.value}
-                </div>
-                <p className="text-dark-500 dark:text-dark-400 text-sm">
-                  {stat.label}
-                </p>
-              </motion.div>
-            ))}
           </div>
 
           {/* GitHub Contribution Graph - Usando imagem real do GitHub */}

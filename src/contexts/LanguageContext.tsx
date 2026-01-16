@@ -61,6 +61,7 @@ interface Translations {
     copyCode: string
     copied: string
     viewSite: string
+    viewGithub: string
     viewCode: string
     corporate: string
   }
@@ -103,7 +104,7 @@ const translations: Record<Language, Translations> = {
       welcome: '👋 Bem-vindo ao meu portfólio',
       greeting: 'Olá, sou',
       role: 'Desenvolvedor Back-End',
-      description: 'Especializado em Python, Data Engineering e Cloud Computing. Construindo plataformas globais de ingestão e transformação de dados.',
+      description: 'Desenvolvedor full stack, atualmente atuando com a stack Python, Data Engineering and AI. Contribuindo para a plataforma global de ingestão e transformação de dados da AB InBev.',
       viewProjects: 'Ver Projetos',
       getInTouch: 'Entre em Contato',
     },
@@ -112,7 +113,7 @@ const translations: Record<Language, Translations> = {
       subtitle: 'Conheça um pouco mais sobre mim',
       paragraph1: 'Sou estudante de Ciência da Computação na Universidade Padre José de Anchieta em Jundiaí, atualmente no 7º semestre. Minha jornada na tecnologia começou com curiosidade e se transformou em paixão.',
       paragraph2: 'Atualmente trabalho na AbInbev como desenvolvedor back-end, onde utilizo Python para desenvolver e manter a plataforma global de ingestão e transformação de dados da empresa.',
-      paragraph3: 'Minha experiência inclui trabalho com Apache Airflow, Azure, Databricks e DataDog, além de um vasto conhecimento em IAs generativas e automação de processos.',
+      paragraph3: 'Minha experiência inclui desenvolvimento em Python e ferramentas adjacentes e experiência com Apache Airflow, Azure, Databricks e DataDog, além de conhecimento em IAs generativas e automação de processos.',
       yearsExperience: 'Anos de Experiência',
       highlights: {
         dataEngineering: { 
@@ -120,7 +121,7 @@ const translations: Record<Language, Translations> = {
           description: 'Pipelines de dados robustos e escaláveis com Airflow e Databricks' 
         },
         python: { 
-          title: 'Python Expert', 
+          title: 'Python', 
           description: 'Desenvolvimento de soluções backend e automações complexas' 
         },
         cloud: { 
@@ -137,9 +138,10 @@ const translations: Record<Language, Translations> = {
       title: 'Experiência Profissional',
       subtitle: 'Minha Trajetória',
       current: 'Atual',
-      previous: 'Anterior',
+      previous: 'Janeiro 2024 - Janeiro 2025',
       freelance: 'Freelance',
       fullTime: 'Tempo Integral',
+      internship: 'Estágio',
     },
     skills: {
       title: 'Habilidades Técnicas',
@@ -160,6 +162,7 @@ const translations: Record<Language, Translations> = {
       python: 'Scripts Python',
       copyCode: 'Copiar código',
       copied: 'Copiado!',
+      viewGithub: 'GitHub',
       viewSite: 'Ver Site',
       viewCode: 'Ver Código',
       corporate: 'Projeto Corporativo',
@@ -201,7 +204,7 @@ const translations: Record<Language, Translations> = {
       welcome: '👋 Welcome to my portfolio',
       greeting: "Hi, I'm",
       role: 'Back-End Developer',
-      description: 'Specialized in Python, Data Engineering and Cloud Computing. Building global data ingestion and transformation platforms.',
+      description: 'Full stack developer, currently working with Python stack, Data Engineering and AI. Contributing to AB InBev\'s global data ingestion and transformation platform.',
       viewProjects: 'View Projects',
       getInTouch: 'Get in Touch',
     },
@@ -210,7 +213,7 @@ const translations: Record<Language, Translations> = {
       subtitle: 'Get to know me better',
       paragraph1: "I'm a Computer Science student at Padre José de Anchieta University in Jundiaí, currently in my 7th semester. My journey in technology started with curiosity and became a passion.",
       paragraph2: 'I currently work at AbInbev as a back-end developer, where I use Python to develop and maintain the global data ingestion and transformation platform.',
-      paragraph3: 'My experience includes working with Apache Airflow, Azure, Databricks and DataDog, as well as extensive knowledge in generative AIs and process automation.',
+      paragraph3: 'My experience includes Python development and adjacent tools, with experience in Apache Airflow, Azure, Databricks and DataDog, plus knowledge in generative AIs and process automation.',
       yearsExperience: 'Years of Experience',
       highlights: {
         dataEngineering: { 
@@ -218,7 +221,7 @@ const translations: Record<Language, Translations> = {
           description: 'Robust and scalable data pipelines with Airflow and Databricks' 
         },
         python: { 
-          title: 'Python Expert', 
+          title: 'Python', 
           description: 'Backend solutions development and complex automations' 
         },
         cloud: { 
@@ -235,9 +238,10 @@ const translations: Record<Language, Translations> = {
       title: 'Professional Experience',
       subtitle: 'My Journey',
       current: 'Current',
-      previous: 'Previous',
+      previous: 'January 2024 - January 2025',
       freelance: 'Freelance',
       fullTime: 'Full Time',
+      internship: 'Internship',
     },
     skills: {
       title: 'Technical Skills',
@@ -259,6 +263,7 @@ const translations: Record<Language, Translations> = {
       copyCode: 'Copy code',
       copied: 'Copied!',
       viewSite: 'View Site',
+      viewGithub: 'GitHub',
       viewCode: 'View Code',
       corporate: 'Corporate Project',
     },
@@ -299,7 +304,7 @@ const translations: Record<Language, Translations> = {
       welcome: '👋 Bienvenido a mi portafolio',
       greeting: 'Hola, soy',
       role: 'Desarrollador Back-End',
-      description: 'Especializado en Python, Data Engineering y Cloud Computing. Construyendo plataformas globales de ingestión y transformación de datos.',
+      description: 'Desarrollador full stack, actualmente trabajando con stack Python, Data Engineering y AI. Contribuyendo a la plataforma global de ingestión y transformación de datos de AB InBev.',
       viewProjects: 'Ver Proyectos',
       getInTouch: 'Contáctame',
     },
@@ -308,7 +313,7 @@ const translations: Record<Language, Translations> = {
       subtitle: 'Conóceme un poco más',
       paragraph1: 'Soy estudiante de Ciencias de la Computación en la Universidad Padre José de Anchieta en Jundiaí, actualmente en el 7º semestre. Mi viaje en tecnología comenzó con curiosidad y se convirtió en pasión.',
       paragraph2: 'Actualmente trabajo en AbInbev como desarrollador back-end, donde utilizo Python para desarrollar y mantener la plataforma global de ingestión y transformación de datos.',
-      paragraph3: 'Mi experiencia incluye trabajo con Apache Airflow, Azure, Databricks y DataDog, además de amplio conocimiento en IAs generativas y automatización de procesos.',
+      paragraph3: 'Mi experiencia incluye desarrollo en Python y herramientas adyacentes, con experiencia en Apache Airflow, Azure, Databricks y DataDog, además de conocimiento en IAs generativas y automatización de procesos.',
       yearsExperience: 'Años de Experiencia',
       highlights: {
         dataEngineering: { 
@@ -316,7 +321,7 @@ const translations: Record<Language, Translations> = {
           description: 'Pipelines de datos robustos y escalables con Airflow y Databricks' 
         },
         python: { 
-          title: 'Python Expert', 
+          title: 'Python', 
           description: 'Desarrollo de soluciones backend y automatizaciones complejas' 
         },
         cloud: { 
@@ -333,9 +338,10 @@ const translations: Record<Language, Translations> = {
       title: 'Experiencia Profesional',
       subtitle: 'Mi Trayectoria',
       current: 'Actual',
-      previous: 'Anterior',
+      previous: 'Enero 2024 - Enero 2025',
       freelance: 'Freelance',
       fullTime: 'Tiempo Completo',
+      internship: 'Prácticas',
     },
     skills: {
       title: 'Habilidades Técnicas',
@@ -357,6 +363,7 @@ const translations: Record<Language, Translations> = {
       copyCode: 'Copiar código',
       copied: '¡Copiado!',
       viewSite: 'Ver Sitio',
+      viewGithub: 'GitHub',
       viewCode: 'Ver Código',
       corporate: 'Proyecto Corporativo',
     },

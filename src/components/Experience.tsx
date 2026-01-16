@@ -30,7 +30,7 @@ const Experience = () => {
         es: 'Desarrollador Back-End',
       },
       period: t.experience.current,
-      type: t.experience.fullTime,
+      type: t.experience.internship,
       description: {
         pt: 'Desenvolvimento e manutenção da plataforma global de ingestão e transformação de dados utilizando Python. Responsável por criar e otimizar pipelines de dados no Apache Airflow, gerenciar ambientes Azure e Databricks, implementar monitoramento com DataDog e criar integrações via APIs REST. Trabalho em equipe global seguindo metodologias ágeis.',
         en: 'Development and maintenance of the global data ingestion and transformation platform using Python. Responsible for creating and optimizing data pipelines in Apache Airflow, managing Azure and Databricks environments, implementing monitoring with DataDog and creating integrations via REST APIs. Working in a global team following agile methodologies.',
@@ -47,13 +47,13 @@ const Experience = () => {
         es: 'Especialista de TI',
       },
       period: t.experience.previous,
-      type: t.experience.fullTime,
+      type: t.experience.internship,
       description: {
         pt: 'Gestão completa da infraestrutura de TI da instituição, incluindo administração de redes, servidores e sistemas. Suporte técnico especializado para corpo docente e administrativo. Manutenção preventiva e corretiva de equipamentos e sistemas internos.',
         en: 'Complete management of the institution\'s IT infrastructure, including network, server and system administration. Specialized technical support for faculty and administrative staff. Preventive and corrective maintenance of equipment and internal systems.',
         es: 'Gestión completa de la infraestructura de TI de la institución, incluyendo administración de redes, servidores y sistemas. Soporte técnico especializado para docentes y personal administrativo. Mantenimiento preventivo y correctivo de equipos y sistemas internos.',
       },
-      technologies: ['Redes', 'Infraestrutura', 'Windows Server', 'Suporte Técnico'],
+      technologies: ['Redes', 'Infraestrutura', 'Suporte Técnico'],
       color: 'from-dark-600 to-dark-700',
     },
     {
@@ -70,7 +70,7 @@ const Experience = () => {
         en: 'Development of custom web projects for various clients. Creation of responsive websites, conversion-optimized landing pages and custom web systems. Focus on performance, SEO and user experience.',
         es: 'Desarrollo de proyectos web personalizados para diversos clientes. Creación de sitios web responsivos, landing pages optimizadas para conversión y sistemas web personalizados. Enfoque en rendimiento, SEO y experiencia del usuario.',
       },
-      technologies: ['React', 'TypeScript', 'Node.js', 'Tailwind CSS'],
+      technologies: ['React', 'TypeScript', 'Node.js', 'Tailwind CSS', 'HTML/CSS'],
       color: 'from-dark-500 to-dark-600',
     },
   ]
