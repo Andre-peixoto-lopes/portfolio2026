@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { ExternalLink, Copy, Check, Globe, Code2 } from 'lucide-react'
+import { ExternalLink, Copy, Check, Globe, Code2, Github } from 'lucide-react'
 import { useLanguage, Language } from '../contexts/LanguageContext'
 
 type LocalizedText = Record<Language, string>
@@ -382,28 +382,31 @@ if __name__ == "__main__":
                       ))}
                     </div>
                     
-                    <motion.a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-primary text-white text-sm font-medium"
-                    >
-                      <ExternalLink size={16} />
-                      {t.projects.viewSite}
-                    </motion.a>
-                    <motion.a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-primary text-white text-sm font-medium"
-                    >
-                      <ExternalLink size={16} />
-                      {t.projects.viewGithub}
-                    </motion.a>
+                    <div className="flex gap-3">
+                      <motion.a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-primary text-white text-sm font-medium"
+                      >
+                        <ExternalLink size={16} />
+                        {t.projects.viewSite}
+                      </motion.a>
+
+                      <motion.a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-lg glass text-dark-700 dark:text-white text-sm font-medium border border-dark-200 dark:border-dark-700"
+                      >
+                        <Github size={16} />
+                        {t.projects.viewGithub}
+                      </motion.a>
+                    </div>
                   </div>
                 </motion.div>
               ))}
