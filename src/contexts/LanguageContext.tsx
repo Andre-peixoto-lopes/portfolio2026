@@ -40,6 +40,7 @@ interface Translations {
     previous: string
     freelance: string
     fullTime: string
+    internship: string
   }
   skills: {
     title: string
